@@ -1,0 +1,41 @@
+h1 {
+    color: black;
+
+    position: relative;
+    top: 230px;
+    right: -140px;
+    font-size: medium;
+    text-align: center;
+    text-decoration: dotted;
+    font-size: xx-large;
+    font-style:italic;
+
+}
+
+body{
+    background-image: url('https://camo.githubusercontent.com/5ddf73ad3a205111cf8c686f687fc216c2946a75005718c8da5b837ad9de78c9/68747470733a2f2f7468756d62732e6766796361742e636f6d2f4576696c4e657874446576696c666973682d736d616c6c2e676966');
+    font-family: Verdana;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    align-self: start;
+    position: absolute;
+    top: -240px;
+}
+img {
+    position: relative;
+    top: 160px;
+    right: -700px;
+
+    
+    height: 200px;
+    width: 200px;
+    border: 1px rgb(24, 18, 14);
+    background-color: rgb(11, 20, 17);
+    float: inherit;
+    margin: auto;
+    padding: 4px;
+
+}
