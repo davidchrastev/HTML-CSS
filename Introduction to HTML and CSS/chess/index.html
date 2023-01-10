@@ -6,109 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chess</title>
     
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
     
 
 
-    <h1>Everything about chess</h1>
+    <style>
+        h1 {
+            text-align: center;
+        }
 
+        h2 {
+            text-align: center;
+        }
 
+        body {
+            background-color:blueviolet;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          color: burlywood;
+        }
+        header {
+          background-color:blueviolet;
+          padding: 1em;
+          text-align: center;
+        }
+        main {
+          margin: 0;
+          padding: 0 2em;
+        }
+        section {
+          margin: 1em 0;
+          padding: 1em;
+        }
+        
+        .chessboard {
+          display: flex;
+          flex-wrap: wrap;
+          width: 400px;
+          margin: 0 auto;
+          
+        }
+        .chessboard div {
+          width: 50px;
+          height: 50px;
+          box-sizing: border-box;
+        }
+        .chessboard .white {
+          background-color: white;
+        }
+        .chessboard .black {
+          background-color: black;
+        }
+
+        #chess-board {
+  border: 1px solid black;
+}
+
+#chess-board td {
+  width: 50px;
+  height: 50px;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+      </style>
+</head>
+<body>
+    <h1>Chess</h1>
+    
     <h2>
         How The Chess Pieces Move 
     </h2>
-    <p>
-        Each of the 6 different kinds of pieces moves differently. Pieces cannot move through other pieces (though the knight can jump over other pieces), and can never move onto a square with one of their own pieces.
-        <br />
-        However, they can be moved to take the place of an opponent's piece which is then captured. Pieces are generally moved into positions where they can capture other pieces (by landing on their square and then replacing them), defend their own pieces in case of capture, or control important squares in the game.
-    </p>
-    <p>
-        <h3>Chess pieces</h3>
-    
-        <ol>
-            <li>Pawn</li>
-            <li>Horse</li>
-            <li>Bishop</li>
-            <li>Rook</li>
-            <li>Queen</li>
-            <li>King</li>
-        </ol>
-    </p>
-    <p>
-How To Move The Pawn In Chess
-Pawns are unusual because they move and capture in different ways: they move forward but capture diagonally. Pawns can only move forward one square at a time, except for their very first move where they can move forward two squares.
-Pawns can only capture one square diagonally in front of them. They can never move or capture backward. If there is another piece directly in front of a pawn he cannot move past or capture that piece.
+    <section>
+        
+        <p>
+            <b>
+            
+            Chess is a two-player strategy game that is played on a square board divided into 64 squares of alternating colors. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The goal of the game is to checkmate the opponent's king, which means the king is in a position to be captured (in "check") and there is no way to move the king out of capture (mate).</p>
+        </b>
+        </section>
 
-<a href="https://www.youtube.com/watch?v=00uUlbcPz5E&embeds_euri=https%3A%2F%2Fwww.chess.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Check video here</a>
-    </p>
-    <p>
-        How To Move The Bishop In Chess
-The bishop may move as far as it wants, but only diagonally. Each bishop starts on one color (light or dark) and must always stay on that color.
+      <section>
+        <b>
+        <h2>The Pieces</h2>
+        <p>Each type of chess piece has its own unique way of moving:</p>
+        <ul>
+          <li>King: moves one square in any direction (horizontally, vertically, or diagonally).</li>
+          <li>Queen: moves any number of squares in any direction (horizontally, vertically, or diagonally).</li>
+          <li>Rook: moves any number of squares horizontally or vertically.</li>
+          <li>Bishop: moves any number of squares diagonally.</li>
+          <li>Knight: moves two squares in one direction (horizontally or vertically) and then one square in the perpendicular direction.</li>
+          <li>Pawn: moves one square forward, but captures diagonally. On its first move, a pawn has the option to move forward two squares.</li>
+        </ul>
+    </b>
+      </section>
 
-
-
-Bishops work well together because they cover up each other's weaknesses.
-
-Bishop Chess Movement
-
-How To Move The Knight In Chess
-Knights move in a very different way from the other pieces – going two squares in one direction, and then one more move at a 90-degree angle, just like the shape of an “L”.
-
-
-
-Knights are also the only pieces that can move over other pieces.
-<a href="https://www.youtube.com/watch?v=_y3eA21rD1w&embeds_euri=https%3A%2F%2Fwww.chess.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Check video here</a>
-
-    </p>
-
-    <p>
-
-        How To Move The Bishop In Chess
-The bishop may move as far as it wants, but only diagonally. Each bishop starts on one color (light or dark) and must always stay on that color.
-
-
-
-Bishops work well together because they cover up each other's weaknesses.
-
-<a href="https://www.youtube.com/watch?v=_y3eA21rD1w&embeds_euri=https%3A%2F%2Fwww.chess.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Check video here</a>
-
-    </p>
-
-    <p>
-        How To Move The Rook In Chess
-The rook may move as far as it wants, but only forward, backward, and to the sides.
-
-
-
-The rooks are particularly powerful pieces when they are protecting each other and working together!
-<a href="https://www.youtube.com/watch?v=_y3eA21rD1w&embeds_euri=https%3A%2F%2Fwww.chess.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Check video here</a>
-    
-</p>
-
-    <p>
-        How To Move The Queen In Chess
-The queen is the most powerful piece. She can move in any one straight direction - forward, backward, sideways, or diagonally - as far as possible as long as she does not move through any of her own pieces.
-
-
-
-And, like with all pieces, if the queen captures an opponent's piece her move is over. Notice how the white queen captures the black queen and then the black king is forced to move.
-<a href="https://www.youtube.com/watch?v=_y3eA21rD1w&embeds_euri=https%3A%2F%2Fwww.chess.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Check video here</a>
-    
-</p>
-
-    <p>
-        How to Move the King in Chess
-The king is the most important piece, but is one of the weakest. The king can only move one square in any direction - up, down, to the sides, and diagonally.
-
-
-
-The king may never move himself into check (where he could be captured). When the king is attacked by another piece this is called "check".
-    
-<a href="https://www.youtube.com/watch?v=_y3eA21rD1w&embeds_euri=https%3A%2F%2Fwww.chess.com%2F&source_ve_path=MjM4NTE&feature=emb_title" target="_blank">Check video here</a>
-</p>
-
-<img src="chess.png" alt="chess">
+<p><h2>The chess board</h2></p>
+<table id="chess-board">
+    <tbody>
+      <tr>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+      </tr>
+      <tr>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+      </tr>
+      <tr>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+      </tr>
+      <tr>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+      </tr>
+      <tr>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+      </tr>
+      <tr>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+      </tr>
+      <tr>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+      </tr>
+      <tr>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+        <td class="white"></td>
+        <td class="black"></td>
+      </tr>
+    </tbody>
+  </table>
     
 </body>
+
+
 </html>
