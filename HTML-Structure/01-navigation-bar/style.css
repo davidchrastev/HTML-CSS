@@ -1,10 +1,4 @@
 
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #CCCCCC;
-}
-
 ul {
     background-color: #444;
     text-align: center;
@@ -15,10 +9,35 @@ ul {
 li {
     size: 24px;
     line-height: 40px;
-    height: 30px;
-    padding: 10px;
-    background-color: #ffffff;
-
+    height: 40px;
+    padding: 20px;
     display: inline;
 
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    background-color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header>p {
+    font-style: italic;
+}
+
+article>p {
+    font-size: 24px;
 }

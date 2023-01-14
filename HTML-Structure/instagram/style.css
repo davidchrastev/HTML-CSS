@@ -1,0 +1,166 @@
+body {
+    margin:40px;
+    padding: 10px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#fb009f, #fe0202);
+
+}
+
+.container {
+    text-align: center;
+}
+
+.text {
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.page {
+    width: 350px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px;
+    padding-bottom: 8px;
+}
+
+.tittle {
+    padding: 50px;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+
+}
+form {
+    width: 50%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+    transform: translateX(50%);
+
+}
+form input {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0,0.4);
+    border-radius: 0px;
+    outline:rgba(0, 0, 0,0.4);
+    
+    outline: saddlebrown;
+}
+
+form input:focus {
+    border: 1px solid rgba(0, 0, 0,0.4);
+    background: #efeefe;
+    height: 35px;
+    font-size: 30px;
+}
+
+input::placeholder {
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+input:focus::placeholder {
+    position: absolute;
+    font-size: 10px;
+    transform: translateY(-10px);
+}
+form button {
+    border: none;
+    background: #5c72bd;
+    padding: 5px 0;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+form button:active {
+    background: #000000;
+    transform: scale(0.995);
+}
+form .option {
+    color: #1d0101;
+    margin: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+form .option::before {
+    position: absolute;
+    content: ' ';
+    width: 37%;
+    height: 2px;
+    background-color: #0840f5;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+form .option::after {
+    position: absolute;
+    content: ' ';
+    width: 37%;
+    height: 2px;
+    background-color: #6ff006;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+.fblink {
+    margin-top: 15px;
+    width: 100%;
+}
+.fblink span {
+    font-size: 18px;
+    color: #021897;
+    margin-right: 5px;
+}
+.fblink a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #021187;
+}
+.forget-id {
+    margin: 15px;
+}
+
+
+.forget-id a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+}
+.page .signup {
+    position: relative;
+    border: 1px solid #fcfcfc;
+    border-radius: 0px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+.signup a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #008aff;
+}
+
+.footer {
+    position: fixed;
+    border: 10px;
+    border-radius: 100%;
+    left: 9%;
+    color: #fcfcfc;
+}
+
+
