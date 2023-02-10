@@ -1,10 +1,18 @@
 * {
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15%;
+    
+
 }
 
 .container {
     max-width: 85vw;
     display: flex;
+    border: 1px solid black;
+    border-width: medium;
+    border-radius: 0%;
+    background-color:cadetblue;
 }
 
 .container section {
@@ -14,8 +22,10 @@
 
 .container .item {
     border: 1px solid black;
+    border-width: thick;
     padding: 12px;
     display: block;
+    color: aliceblue;
 }
 
 .container .week {
@@ -25,10 +35,13 @@
 
 .container .week .item {
     width: 20%;
+    font-size: small;
 }
 
 .container .week .item:nth-child(1),
 .container .week .item:nth-child(7) {
+    text-align: center;
+    font-size: large;
     width: 100%;
 }
 
@@ -44,8 +57,28 @@
 
 
 .container .notes .item {
+    font-size: large;
+    text-align: center;
     width: 100%;
     height: 100%;
+    
 }
+
+
+
+.item {
+    background-color: #d7d7d7;
+    box-shadow: 3px 5px 5px #888888;
+    border-radius: 2px;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.item:hover {
+    background-color: #000;
+    transform: scale(1.5) perspective(1px)
+}
+
+
 
 
