@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Daily Notes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>My Daily Notes</h1>
+    <form>
+      <textarea id="note-input"></textarea>
+      <br>
+      <button type="button" onclick="addNote()">Add Note</button>
+    </form>
+    <ul id="note-list"></ul>
+    <script>
+      function addNote() {
+        var input = document.getElementById("note-input");
+        var note = input.value;
+        input.value = "";
+
+        var list = document.getElementById("note-list");
+        var item = document.createElement("li");
+        item.innerHTML = note;
+
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "Delete";
+        deleteButton.onclick = function() {
+          list.removeChild(item);
+        };
+        item.appendChild(deleteButton);
+        
+        var doneButton = document.createElement("button");
+        doneButton.innerHTML = "Done";
+        doneButton.onclick = function() {
+          item.style.textDecoration = "line-through";
+        };
+        item.appendChild(doneButton);
+
+        list.appendChild(item);
+      }
+    </script>
+  </body>
+</html>
