@@ -1,0 +1,87 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css%22");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap%22");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css%22");
+
+
+.container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #f6e0b5;
+    font-family: 'Montserrat';
+    box-shadow: -4px 2px 42px 0px rgba(0,0,0,0.75);
+  }
+
+
+  .card {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid black;
+    overflow: hidden;
+    height: 200px;
+    width: 260px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+
+  .category {
+    background-color: #66545e;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .card.top-left {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-image: url('images/music.jpg');
+  }
+
+  .card.top-right {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-image: url('images/celebrity.jpg');
+  }
+
+  .card.bottom-left {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-image: url('images/tv-show.jpg');
+  }
+
+  .card.bottom-right {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: url('images/art.jpg');
+  }
+
+
+  .other-category {
+    color: #62515d;
+    grid-row: 1 / 3;
+    grid-column: 3 / 3;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: medium;
+  }
+
+  .items {
+    color: #62515d;
+    list-style: none;
+    list-style:url("https://use.fontawesome.com/releases/v5.15.4/css/all.css%22");
+  }
+
+

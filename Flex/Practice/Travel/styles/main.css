@@ -1,0 +1,165 @@
+/* 
+  bg - #070e27
+  bg-light - #162044
+  priamry - #0059f7
+  gray - #7e8bb6
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  
+  background-image: url('/images/landing-photo.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+ 
+}
+
+
+
+p {
+  color: #000000;
+}
+
+.header {
+  width: 200vh;
+  padding: 16px 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+}
+
+.header .navigation {
+  margin-left: auto;
+  margin-right: 24px;
+  
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.header .nav-list a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Buttons */
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  background-color: #090c16;
+  color: #fff;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: #000103;
+}
+
+/* Global styles */
+
+.section-subtitle {
+  text-align:left;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 28px;
+  
+}
+
+/* Hero */
+
+#hero {
+  padding: 70px 64px;
+}
+
+#hero .welcome {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 30px;
+}
+
+#hero .welcome > * {
+  width: 40%;
+}
+
+#hero .welcome .title {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+#hero .welcome .info {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.grid {
+  padding-top: 200px;
+  padding-bottom: 400px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-item {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  align-items: center;
+}
+
+.grid-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.grid-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content:space-between;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-right: 40px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+

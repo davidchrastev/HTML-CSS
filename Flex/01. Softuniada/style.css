@@ -1,0 +1,21 @@
+.container {
+    display: inline;
+    border: 1px solid black;
+}
+
+
+.calendar {
+  padding: 16px 64px;
+  display: flex;
+  align-items:flex-start;
+  gap: 12px;
+  background-color: #ffa200;
+  top: 0px;
+  color: #fff;
+  
+}
+
+.container .when {
+    border-bottom: 1px solid black;
+}
+
